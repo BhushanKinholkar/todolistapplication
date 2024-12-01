@@ -12,6 +12,7 @@ This is a sample to-do list application built using TodoMVC. It demonstrates the
 **Installation**
 To install and run the application locally, follow these steps:
 git clone https://github.com/BhushanKinholkar/todolistapplication.git
+
 npm install
 npm start
 
