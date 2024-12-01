@@ -12,7 +12,9 @@ https://github.com/BhushanKinholkar/todolistapplication.git
     
 ## Documentation
 
-To use the application, open your browser and navigate to https://todomvc.com/examples/react/dist/
+To use the application, open your browser and navigate to url and verified the end to end positive and negative scenario on this application.
+
+https://todomvc.com/examples/react/dist/
 
 ## End-to-End testing framework
 we used playwright automation testing framework for end to end scenario developement. In here, used the page object model framework for developement the roubust framework.
