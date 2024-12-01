@@ -12,10 +12,10 @@ class todoPage{
         this.completebutton = page.locator("[data-testid='footer-navigation'] li a");
         this.allButton = page.locator("[data-testid='footer-navigation'] li a");
         this.clearButton = page.locator(".clear-completed");
-        this.firstrecordview = page.locator(".view")
+        this.firstrecordview = page.locator(".view");
         this.closeicon = page.locator(".destroy");
-        this.text1 = page.locator("[data-testid='todo-item-label']")
-
+        this.text1 = page.locator("[data-testid='todo-item-label']");
+        this.containervalue = page.locator("[class='view']");
     }
 
     async getURL()
@@ -90,6 +90,24 @@ class todoPage{
             console.log("Duplicate entery added")
 
         }
+    }
+
+    async double_ClickItem()
+    {   
+
+        //await this.page.dblclick(this.firstrecordview);
+        await this.firstrecordview.first().dblclick();
+
+    }
+
+    async cleartheValue()
+    {   
+        await this.page.waitForTimeout(5000);
+        await this.page.keyboard.press('Control+A');
+        await this.page.waitForTimeout(5000);
+        await this.page.keyboard.press('Backspace');
+        await this.page.waitForTimeout(2000);
+
     }
 
 }

@@ -12,21 +12,18 @@ test.describe('Test Cases for the toDo page', () =>
 
     });
 
-    test('To get the final list count number', async ({page}) => {
+    test('To double click on the name it should be editable', async ({page}) => {
 
         await  todopage.addTheValue(testdata.value1);
         await page.keyboard.press('Enter');
         await  todopage.addTheValue(testdata.value2);
         await page.keyboard.press('Enter');
-        await  todopage.addTheValue(testdata.value3);
+
+        await todopage.double_ClickItem();
+        
+        await  todopage.cleartheValue();
+        await  page.waitForTimeout(5000);
         await page.keyboard.press('Enter');
-        await  todopage.addTheValue(testdata.value4);
-        await page.keyboard.press('Enter');
-        await  todopage.addTheValue(testdata.value5);
-        await page.keyboard.press('Enter');
-        await todopage.checkTheItem();
-        await todopage.clearItemFromList();
-        await todopage.getTotalItemCount();
               
     });
 
