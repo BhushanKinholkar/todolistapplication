@@ -20,10 +20,7 @@ npm start
 To use the application, open your browser and navigate to https://todomvc.com/examples/react/dist/
 
 **Testing**
-How and What is Being Tested
 We use Playwright for end-to-end testing to ensure the application behaves as expected.
-
-End-to-End Tests: Test the entire application workflow.
 
 **We used the Page Object Model (POM)**
 
