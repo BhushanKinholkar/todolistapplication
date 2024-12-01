@@ -25,8 +25,7 @@ We use Playwright for end-to-end testing to ensure the application behaves as ex
 
 End-to-End Tests: Test the entire application workflow.
 
-Which Patterns are Used and Why
-Page Object Model (POM)
+**We used the Page Object Model (POM)**
 
 pages
   ├── todopage.js
